@@ -1,0 +1,13 @@
+😴 Drowsiness Detection System | Streamlit + OpenCV + MediaPipe
+
+The Drowsiness Detection System is an AI-driven web application designed to monitor human alertness levels in real time through webcam-based eye tracking. Built using Streamlit, OpenCV, and MediaPipe, this project applies advanced computer vision techniques to detect early signs of fatigue or drowsiness by continuously analyzing the Eye Aspect Ratio (EAR).
+
+The application captures a live video stream from the user’s webcam and identifies facial landmarks using MediaPipe’s FaceMesh model. It then calculates the EAR — a numerical value that reflects how open or closed the eyes are. When the EAR drops below a predefined threshold for a specific duration, the system recognizes it as potential drowsiness. The app immediately issues a visual warning message and can also trigger a sound alert to prompt the user to regain focus.
+
+The dashboard is powered by Streamlit, offering an intuitive and interactive interface that allows users to start or stop detection, adjust EAR sensitivity, set time thresholds, and enable or disable audio alerts. This makes the tool flexible and user-friendly, even for non-technical users.
+
+The system is lightweight, fast, and requires no additional hardware beyond a standard webcam. It can be run locally or deployed online via Streamlit Cloud for easy access and sharing.
+
+This project has wide applications in areas such as driver monitoring, workplace safety, and healthcare, helping prevent fatigue-related accidents and ensuring continuous attention during critical tasks.
+
+Overall, this Drowsiness Detection System demonstrates the power of integrating AI with computer vision to enhance safety, improve human performance, and create smarter, more responsive digital systems.
