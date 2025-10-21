@@ -1,0 +1,123 @@
+streamlit
+opencv-python
+mediapipe
+numpy
+Absolutely 👍 — here’s a **step-by-step guide with all the code and commands** you need to **run your Streamlit Drowsiness Detection app in VS Code** from start to finish.
+
+---
+
+## 🧠 Step-by-Step: Run Streamlit App in VS Code
+
+### 🪜 Step 1: Open VS Code
+
+1. Launch **Visual Studio Code**.
+2. Click **File → Open Folder** and select your project folder
+   (for example: `C:\Users\HP\OneDrive\Desktop\Python Dashboard Project`).
+
+---
+
+### 🧱 Step 2: Create a Virtual Environment (Recommended)
+
+In the VS Code **Terminal** (`` Ctrl + ` ``):
+
+```bash
+python -m venv venv
+```
+
+Then activate it:
+
+* **Windows**
+
+  ```bash
+  venv\Scripts\activate
+  ```
+* **Mac/Linux**
+
+  ```bash
+  source venv/bin/activate
+  ```
+
+You should now see `(venv)` appear before your terminal prompt.
+
+---
+
+### 🧩 Step 3: Install Required Libraries
+
+Run this command in the terminal:
+
+```bash
+pip install streamlit opencv-python mediapipe numpy
+```
+
+Optional (only for Windows sound alert):
+
+```bash
+pip install winsound
+```
+
+> ⚠️ `winsound` comes preinstalled on Windows; skip this if you get “No matching distribution found”.
+
+---
+
+### 📄 Step 4: Create Your Python File
+
+Create a file named **`app.py`** in your VS Code project folder and paste your full code (the drowsiness detection code you shared earlier).
+
+Example:
+
+```
+📁 Drowsiness-Detection/
+│
+├── app.py
+└── requirements.txt   (optional)
+```
+
+---
+
+### 🧠 Step 5: (Optional) Create `requirements.txt`
+
+In the same folder, create a file called `requirements.txt` and paste:
+
+```
+streamlit
+opencv-python
+mediapipe
+numpy
+```
+
+---
+
+### ▶️ Step 6: Run the App
+
+In the terminal (make sure your virtual environment is active):
+
+```bash
+streamlit run app.py
+```
+
+---
+
+### 🌐 Step 7: Open in Browser
+
+After running, you’ll see something like:
+
+```
+You can now view your Streamlit app in your browser.
+
+Local URL: http://localhost:8501
+```
+
+Click that link or copy it into your browser — your **Drowsiness Detection Dashboard** will appear.
+
+🧰 Common Troubleshooting
+
+| Problem                     | Fix                                                           |
+| --------------------------- | ------------------------------------------------------------- |
+| `No module named streamlit` | Run `pip install streamlit` again in the **same environment** |
+| Webcam not opening          | Close any other app using the webcam, or check permissions    |
+| “TensorFlow warnings”       | Already handled with your `os` and `logging` settings         |
+
+---
+
+✅ **You’re done!**
+Your Drowsiness Detection app should now run live inside your browser — and you can edit the code directly in VS Code for instant updates.
